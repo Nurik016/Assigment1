@@ -72,6 +72,25 @@ public class Main {
                     System.out.println(number + " is a composite number.");
                 }
                 break;
+
+
+            case 4:
+                //Problem 4: Finding factorial using recursion
+                System.out.println("Problem4. You are given a number “n”, write the program using recursion for\n" +
+                        "finding “n!”\n");
+
+                //Getting the number from the user
+                System.out.print("Enter a number: ");
+                number = scanner.nextInt();
+
+                //Finding and printing the factorial of the number
+                if (number < 0) {
+                    System.out.println("Factorial of " + number + " is: ∞");
+                } else {
+                    double result = Assigment1.factorial(number);
+                    System.out.println("Factorial of " + number + " is: " + result);
+                }
+                break;
         }
         scanner.close();
     }
