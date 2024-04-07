@@ -11,4 +11,18 @@ public class Assigment1 {
         //Return the minimum of the current element and the minimum found so far
         return Math.min(arr[index], min);
     }
+
+
+    //CASE2: Find average of elements in an array
+    public static double findAverage(int[] arr, int index, int sum) {
+        //Base case: if we reached the end of the array, return the average
+        if (index == arr.length) {
+            return (double) sum / arr.length;
+        }
+        //Add the current element to the sum
+        sum += arr[index];
+        //Move to the next element and call recursively
+        return findAverage(arr, index + 1, sum);
+    }
+
 }
