@@ -104,4 +104,21 @@ public class Assigment1 {
                 return false;
         }
     }
+
+
+    //CASE9: Calculate binomial coefficient
+    public class BinomialCoefficient {
+        static int binomialCoeff(int n, int k) {
+            if (n < 0 || k < 0) {
+                System.out.println("You need to use only positive numbers.");
+                return -1; //Return -1 to indicate an error
+            } else if (k == 0 || k == n) {
+                return 1;
+            } else {
+                int result = binomialCoeff(n - 1, k - 1) + binomialCoeff(n - 1, k);
+                System.out.println("The binomial coefficient of (" + n + ", " + k + ") is: " + result);
+                return result;
+            }
+        }
+    }
 }

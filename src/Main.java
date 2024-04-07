@@ -166,6 +166,26 @@ public class Main {
                 else
                     System.out.println("Not all characters are digits.");
                 break;
+
+
+            case 9:
+                //Problem 9: Finding binomial coefficient
+                System.out.println("Problem9. You are given numbers “g” and “k”,write the program that\n" +
+                        "finds Cg" + "k" + "(binomial coefficient) using formulaCg" +
+                        "k=Cg−1" + "k−1" + "+Cg−1" + "k where Cg\n" +
+                        "0=Cg" + "n=1.\n");
+
+                //Getting the numbers from the user
+                System.out.print("Enter the g: ");
+                int g = scanner.nextInt();
+
+                System.out.print("Enter the k: ");
+                int k = scanner.nextInt();
+
+                //Finding and printing the binomial coefficient
+                result = Assigment1.BinomialCoefficient.binomialCoeff(g, k);
+                System.out.println("The value of C(g, k) is: " + result);
+                break;
         }
         scanner.close();
     }
