@@ -107,6 +107,24 @@ public class Main {
                 double result = Assigment1.fibonacci(number);
                 System.out.println("The " + number + "th Fibonacci number is: " + result);
                 break;
+
+
+            case 6:
+                //Problem 6: Calculating power of a number
+                System.out.println("Problem6. You are given numbers “a” and “n”, write the function that " +
+                        "returns a^n\n");
+
+                //Getting the numbers from the user
+                System.out.print("Enter the value of a: ");
+                double a = scanner.nextInt();
+
+                System.out.print("Enter the value of n: ");
+                double n = scanner.nextInt();
+
+                //Finding and printing a^n
+                result = Assigment1.calculatePower(a, n);
+                System.out.println(a + " raised to the power of " + n + " is: " + result);
+                break;
         }
         scanner.close();
     }

@@ -64,4 +64,18 @@ public class Assigment1 {
             return fibonacci(n - 1) + fibonacci(n - 2); //Recursive calls
         }
     }
+
+
+    //CASE6: Calculate power of a number
+    public static double calculatePower(double a, double n) {
+        if (n == 0) {
+            return 1;
+        } else if (n < 0) {
+            //Handle negative exponent
+            return 1 / calculatePower(Math.abs(a), Math.abs(n));
+        } else {
+            //Positive exponent (existing logic)
+            return a * calculatePower(a, n - 1);
+        }
+    }
 }
