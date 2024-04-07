@@ -148,6 +148,24 @@ public class Main {
                 Assigment1.reverseArray(l, arr, 0);
                 System.out.println();
                 break;
+
+
+            case 8:
+                //Problem 8: Checking if a string consists only of digits
+                System.out.println("Problem8. You are given a string “s”, write the function for checking\n" +
+                        "whether “s” is all consists of digits.\n");
+
+                scanner.nextLine();
+                // Getting the string from the user
+                System.out.print("Enter a string: ");
+                String input = scanner.nextLine();
+
+                //Checking if the string consists only of digits and printing the result
+                if (Assigment1.isAllDigits(input))
+                    System.out.println("All characters are digits.");
+                else
+                    System.out.println("Not all characters are digits.");
+                break;
         }
         scanner.close();
     }

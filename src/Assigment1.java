@@ -90,4 +90,18 @@ public class Assigment1 {
         reverseArray(n, arr, index + 1);
         System.out.print(arr[index] + " ");
     }
+
+
+    //CASE8: Check if a string consists only of digits
+    public static boolean isAllDigits(String s) {
+        if (s.length() == 0)
+            return true;
+        else {
+            char firstChar = s.charAt(0);
+            if (Character.isDigit(firstChar))
+                return isAllDigits(s.substring(1));
+            else
+                return false;
+        }
+    }
 }
