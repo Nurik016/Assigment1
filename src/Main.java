@@ -186,6 +186,28 @@ public class Main {
                 result = Assigment1.BinomialCoefficient.binomialCoeff(g, k);
                 System.out.println("The value of C(g, k) is: " + result);
                 break;
+
+
+            case 10:
+                //Problem 10: Finding GCD using recursion
+                System.out.println("Problem10. You are given “a” and “b”, write the function for finding\n" +
+                        "GCD(a, b) using recursion.\n");
+
+                //Getting the numbers from the user
+                System.out.print("Enter the a: ");
+                int num1 = scanner.nextInt();
+
+                System.out.print("Enter the b: ");
+                int num2 = scanner.nextInt();
+
+                //Finding and printing the GCD
+                result = Assigment1.GCD.gcd(num1, num2);
+                System.out.println("The GCD(" + num1 + "," + num2 + ") is: " + result);
+                break;
+
+            default:
+                //Handling invalid input
+                System.out.println("Invalid input. Please enter a problem between 1 and 10.");
         }
         scanner.close();
     }
