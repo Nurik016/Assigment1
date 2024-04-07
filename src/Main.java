@@ -91,6 +91,22 @@ public class Main {
                     System.out.println("Factorial of " + number + " is: " + result);
                 }
                 break;
+
+
+            case 5:
+                //Problem 5: Finding Fibonacci sequence using recursion
+                System.out.println("Problem5. You are given a number “n”, write the function for finding n-th\n" +
+                        "elements in Fibonacci sequence using recursion. (Fn = Fn-1+ Fn-2).\n" +
+                        "F0= 0, F1 = 1.\n");
+
+                //Getting the number from the user
+                System.out.print("Enter a number: ");
+                number = scanner.nextInt();
+
+                //Finding and printing the nth Fibonacci number
+                double result = Assigment1.fibonacci(number);
+                System.out.println("The " + number + "th Fibonacci number is: " + result);
+                break;
         }
         scanner.close();
     }

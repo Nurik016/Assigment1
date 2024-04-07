@@ -52,4 +52,16 @@ public class Assigment1 {
             return n * factorial(n - 1); //Recursive call
         }
     }
+
+
+    //CASE5: Find nth Fibonacci number
+    public static int fibonacci(int n) {
+        if (n == 0 || n <= 0) {
+            return 0; //Base case: 0th Fibonacci number is 0
+        } else if (n == 1) {
+            return 1; //Base case: 1st Fibonacci number is 1
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2); //Recursive calls
+        }
+    }
 }
