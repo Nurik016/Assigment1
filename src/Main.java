@@ -125,6 +125,29 @@ public class Main {
                 result = Assigment1.calculatePower(a, n);
                 System.out.println(a + " raised to the power of " + n + " is: " + result);
                 break;
+
+
+            case 7:
+                //Problem 7: Reversing an array without using array data structure
+                System.out.println("Problem7. You are given a number “n” and an array of “n” elements,\n" +
+                        "write the program that returns given array in reverse order\n" +
+                        "without using array data structure.\n");
+
+                //Getting the number of elements from the user
+                System.out.print("Enter the number of elements: ");
+                int l = scanner.nextInt();
+
+                arr = new int[l];
+                for (int i = 0; i < l; i++) {
+                    System.out.print("Enter element " + (i + 1) + ": ");
+                    arr[i] = scanner.nextInt();
+                }
+
+                //Reversing and printing the array
+                System.out.print("Reversed array: ");
+                Assigment1.reverseArray(l, arr, 0);
+                System.out.println();
+                break;
         }
         scanner.close();
     }

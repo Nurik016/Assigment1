@@ -78,4 +78,16 @@ public class Assigment1 {
             return a * calculatePower(a, n - 1);
         }
     }
+
+
+    //CASE7: Reverse elements of an array
+    public static void reverseArray(int n, int[] arr, int index) {
+        if (index == n) {
+            //Base case: Reached the end of the array
+            return;
+        }
+        //Recursively print elements from the end to the beginning
+        reverseArray(n, arr, index + 1);
+        System.out.print(arr[index] + " ");
+    }
 }
