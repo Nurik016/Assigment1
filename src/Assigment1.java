@@ -25,4 +25,22 @@ public class Assigment1 {
         return findAverage(arr, index + 1, sum);
     }
 
+
+    //CASE3: Check if a number is prime
+    public static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false; // 1 or less are not prime
+        }
+        //No need to check for even numbers except 2
+        if (num % 2 == 0 && num > 2) {
+            return false;
+        }
+        //Check divisibility only up to the square root of num
+        for (int i = 3; i * i <= num; i += 2) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

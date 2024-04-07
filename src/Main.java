@@ -54,6 +54,24 @@ public class Main {
                 double average = Assigment1.findAverage(arr, 0, 0);
                 System.out.println("The average of the array is " + average);
                 break;
+
+
+            case 3:
+                //Problem 3: Checking if a number is prime
+                System.out.println("Problem3. You are given a number “n”, write the function for checking\n" +
+                        "whether“n” is prime.\n");
+
+                //Getting the number from the user
+                System.out.print("Enter a number: ");
+                number = scanner.nextInt();
+
+                //Checking if the number is prime and printing the result
+                if (Assigment1.isPrime(number)) {
+                    System.out.println(number + " is a prime number.");
+                } else {
+                    System.out.println(number + " is a composite number.");
+                }
+                break;
         }
         scanner.close();
     }
