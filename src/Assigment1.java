@@ -133,4 +133,19 @@ public class Assigment1 {
             }
         }
     }
+
+    //CASE11:
+    public static String CheckerWord(String word, char a){
+        int result=0;
+        for(int i=0; i<word.length();i++){
+            char firstChar = word.charAt(0);
+            if(Character.isAlphabetic(firstChar)){
+                result++;
+                return CheckerWord(word.substring(1));
+            }else{
+                return CheckerWord(word.substring(1));
+            }
+        }
+        System.out.print(result);
+    }
 }

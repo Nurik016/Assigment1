@@ -6,7 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //Prompting the user to enter a problem number between 1 and 10
-        System.out.print("Enter a problem between 1 and 10: ");
+        System.out.print("Enter a problem between 1 and 11: ");
         int number = scanner.nextInt();
 
         switch (number) {
@@ -205,6 +205,17 @@ public class Main {
                 System.out.println("The GCD(" + num1 + "," + num2 + ") is: " + result);
                 break;
 
+
+            case 11:
+                scanner.nextLine();
+                System.out.print("Write any word: ");
+                String word = scanner.nextLine();
+                System.out.print("What char want to find: ");
+                char a = scanner.nextLine();
+
+                Assigment1.CheckerWord(word, a);
+
+                break;
             default:
                 //Handling invalid input
                 System.out.println("Invalid input. Please enter a problem between 1 and 10.");
